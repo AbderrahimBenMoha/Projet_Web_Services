@@ -1,0 +1,18 @@
+info:
+  name: Supprimer Message
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: http://localhost:8080/JournalAPI/api/messages/15
+  auth:
+    type: basic
+    username: jean
+    password: jean123
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

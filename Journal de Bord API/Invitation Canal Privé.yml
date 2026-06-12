@@ -1,0 +1,25 @@
+info:
+  name: Invitation Canal Privé
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:8080/JournalAPI/api/channels/members
+  body:
+    type: json
+    data: |-
+      {
+        "channelId": 2,
+        "login": "jean"
+      }
+  auth:
+    type: basic
+    username: jean
+    password: jean123
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
